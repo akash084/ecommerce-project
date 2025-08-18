@@ -1,11 +1,10 @@
 import { Icon } from "@iconify/react";
-
 import logo from "../../assets/Logo.svg";
 
 const Footer = () => {
 	return (
 		<>
-			<div className="primaryFont flex flex-col items-center gap-[40px] mx-[120px]">
+			<div className="primaryFont flex flex-col items-center gap-[40px] mx-[120px] mt-[80px] mb-[20px]">
 				<div className="logo flex flex-row gap-2 items-center">
 					<img src={logo} alt="Logo" className="size-[36px]" />
 					<div className="font-bold text-2xl">Ecommerce</div>
@@ -66,8 +65,10 @@ const Footer = () => {
 				</div>
 
 				<div className="footerEnd w-full flex justify-between items-center">
-					<div className="languageSelect bg-[#EAECEF] text-xs py-1.5 px-2 rounded-sm text-gray-600">
-						<select defaultValue="English" className="select  w-22">
+					<div className="languageSelect text-xs py-1.5 px-2 rounded-sm text-gray-600">
+						<select
+							defaultValue="English"
+							className="select w-26 h-7 text-xs focus:outline-none">
 							<option disabled={true}>English</option>
 							<option>Nepali</option>
 							<option>Hindi</option>
